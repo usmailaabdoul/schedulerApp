@@ -9,7 +9,7 @@ import {
   LegacyTabs,
 } from 'react-native-router-flux';
 
-import {Home, Drawer, NewSchedule, Splash} from '../screens';
+import {Home, Drawer, NewSchedule, Splash, Auth} from '../screens';
 import styles from './navigation.style';
 import Screens from '../components/TabIcons/Screens';
 import TabIcons from './../components/TabIcons/TabIcons';
@@ -20,6 +20,7 @@ const Navigation = () => {
       <Scene>
         <Stack key="root" hideNavBar>
           <Scene key="splash" component={Splash} initial hideNavBar={true} />
+          <Scene key="auth" component={Auth} hideNavBar={true} />
 
           {/* Tab Bar */}
           <Scene

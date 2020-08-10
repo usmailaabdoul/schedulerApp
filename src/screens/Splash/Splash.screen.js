@@ -33,7 +33,7 @@ const Splash = () => {
         </View>
 
         <TouchableOpacity
-          onPress={() => Actions.home()}
+          onPress={() => Actions.auth()}
           style={styles.buttonWrapper}>
           <Text style={styles.buttonText}>Get started</Text>
         </TouchableOpacity>
